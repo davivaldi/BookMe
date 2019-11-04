@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="header"> 
+    <H3>Book Me</H3>
+    <!-- <img id="bookMeImg" src="https://bcassetcdn.com/preview/logodraft/10d99e99-b616-4e2b-90f9-2144688170da/image/large.png" alt="Picture of a book"height=75 width=75> -->
+    
+  </div>
+
+  <div class="upperPic">
+    <p class="topWords"> Click Add Book to Start Booking</p>
+    <button id="addBook" class="btn" [routerLink]="['/book/new']">Add Book</button>
+  </div>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="typeahead.min.js" type="text/javascript"></script>
+  
+  
+  <div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search Books" aria-label="Search Books" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+            <button id="searchbtn" class="btn btn-outline-secondary" type="button">Search</button>
+          </div>
+      </div>
+      
+    </div>
+    
+    <div class="body">
+  
+    </div>
+    <div class="footer">
+  
+    </div>
+    <div class="authors">
+    
+    <div class="bd">
+      
+      <div class="row">
+        <div class="md-form">
+          
+          <table class="table-striped">
+            
+            <thead>
+              <tr >
+                <th>Photo</th>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Rating</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            
+            <tbody>
+              <tr *ngFor="let b of books">
+                <td> <img src="{{b.image}}" alt="Picture of a book"height=70 width=100></td>
+                <td>{{ b.isbn }}</td>
+                <td>{{ b.title }}</td>
+                <td><p> {{ b.author }}</p> </td>
+                <td><p> {{ b.desc }}</p> </td>
+                <td><p> {{ b.rating }}- Stars</p> </td>
+                <td>
+                  <button id="edit" class="btn" [routerLink]="['/book/edit', b._id]">Edit</button> |
+                  <button class="btn btn-dark" [routerLink]="['/book/delete', b._id]">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+            
+          </table>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+
+
+
+
+
+</div>

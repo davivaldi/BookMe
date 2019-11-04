@@ -1,0 +1,72 @@
+.header{
+    height: 25px;
+    background-color: white;
+    display: inline-block;
+    font-family: fantasy;
+    color: #4b4752;
+}
+
+.upperPic{
+    background-image: url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    height: 300px;
+    // width: 300px;
+
+    
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.bd{
+    width: 600px;
+    background-color: white;
+    margin-left:50px;
+    margin-bottom: 50px;
+
+}
+.authors{
+    background-position-x: 100px;
+    position: absolute;
+    right:460px;
+    top: 443px;
+}
+.topWords{
+    color:white;
+    font-size: 30px;
+    font-family: fantasy;
+    margin-left: 345px;
+}
+.body{
+    height: 500px;
+}
+.footer{
+    height: 30px;
+    background-color: #4b4752;
+}
+
+#addBook{
+    margin-left: 462px;
+    margin-top: 50px;
+    height:100px;
+    width: 154px;
+    background-color: #97d643;
+    color: white;
+    font-size: 29px;
+
+}
+#searchbtn{
+    background-color: #97d643;
+    color: white;
+}
+#bookSearch{
+    margin-top: 55px;
+    height: 25px;
+    background-color: white;
+}
+#bookMeImg{
+    margin-left: 300px;
+}
+#edit{
+    background-color: #97d643;
+}
